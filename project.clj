@@ -1,4 +1,4 @@
-(defproject steve-clj-tagsoup "0.4.2"
+(defproject steve-clj-tagsoup "0.4.3"
   :description "A HTML parser for Clojure."
   :deploy-repositories [["releases" :clojars]
                        ["snapshots" :clojars]]
