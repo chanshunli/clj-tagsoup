@@ -165,6 +165,11 @@ representing one), the latter is preferred."
            (throw e))))
       (first (remove string? (zip/root (var-get tree)))))))
 
+(comment
+  ;; 编码正常
+  (parse-string "<html><body class=\"test\"><p>葫芦<b>笔记</b>印象<i>笔记</i>E</p><p>hohoho</p></body></html>")
+  ;; => [:html {} [:body {:class "test"} [:p {} "葫芦" [:b {} "笔记"] "印象" [:i {} "笔记"] "E"] [:p {} "hohoho"]]]
+  )
 (defn parse-string
   "Parses a given string as HTML, passing options to `parse'."
   [^String s & options]
