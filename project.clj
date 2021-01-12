@@ -1,4 +1,4 @@
-(defproject clj-tagsoup "0.3.0"
+(defproject clj-tagsoup "0.4.0"
   :description "A HTML parser for Clojure."
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/data.xml "0.0.8"]
