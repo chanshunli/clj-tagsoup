@@ -10,6 +10,13 @@ parser, but has a DOM interface.  It is buildable by [Leiningen].
 Usage
 -----
 
+```clojure
+
+  org.clojure/data.xml                            {:mvn/version "0.0.8"}
+  steve-clj-tagsoup                               {:mvn/version "0.4.3"}
+
+```
+
 The two main functions defined by clj-tagsoup are `parse` and `parse-string`.
 The first one can take anything accepted by clojure.java.io's [reader] function
 except for a `Reader`,
